@@ -10,6 +10,10 @@ per-level thresholds, and promotes the player along a LuckPerms track when
 they cross a threshold. Each level also raises the earnings multiplier, so
 better English earns faster.
 
+<p align="center">
+  <img src="assets/preview.jpg" alt="EnglishProgression" width="80%" />
+</p>
+
 ## Why this plugin exists
 
 Levels that only a teacher can grant feel arbitrary. Levels that come from
