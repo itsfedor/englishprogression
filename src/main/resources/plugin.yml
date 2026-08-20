@@ -1,0 +1,8 @@
+name: EnglishProgression
+version: '1.0.0'
+main: com.nous.progression.EnglishProgression
+api-version: '1.21'
+depend: [Vault]
+softdepend: [LuckPerms, Chat2Earn, DailyEnglish]
+authors: [Nous]
+description: English level progression — lifetime earnings → LuckPerms track promotion
