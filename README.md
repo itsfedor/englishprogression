@@ -40,15 +40,26 @@ months of daily English.
 ## Requirements
 
 - Paper or Spigot 1.21+
-- Vault with an economy plugin
-- LuckPerms (the plugin promotes on a track)
+- [Vault](https://www.spigotmc.org/resources/vault.34315/) + an economy plugin (e.g. [EssentialsX](https://essentialsx.net/downloads.html))
+- [LuckPerms](https://luckperms.net/) (the plugin promotes on a track)
 
-## Setup
+## Install
 
-1. Create the LuckPerms track named `english` with groups in order:
+1. Download `EnglishProgression.jar` from [Releases](https://github.com/itsfedor/englishprogression/releases/latest) (or use the copy in the repo root).
+2. Drop the jar into `plugins/`.
+3. Create the LuckPerms track named `english` with groups in order:
    `a0 a1 a2 b1 b2 c1 c2 d1`.
-2. Copy `config.example.yml` to `config.yml` in the plugin folder.
-3. Restart the server.
+4. Copy `config.example.yml` to `config.yml` in the plugin folder.
+5. Restart the server.
+
+## Build from source
+
+```bash
+./gradlew build
+```
+
+Requires JDK 21. The build pulls Paper API 1.21.1, VaultAPI and the LuckPerms
+API, and produces `build/libs/EnglishProgression.jar`.
 
 On level-up the plugin promotes the player and sends a level-up message
 with the new multiplier. The messages are configurable with color codes.
@@ -79,6 +90,12 @@ luckperms:
   track: "english"
   promote-on-levelup: true
 ```
+
+## Troubleshooting
+
+- **No promotion on level-up** — the `english` track must exist before the plugin loads it: `/lp createtrack english`, then add the groups in order. Verify with `/lp track english info`. The plugin never creates its own groups.
+- **Nothing pays out** — Vault alone is not enough; an economy plugin (EssentialsX, CMI…) must be installed and registered, or Vault has no economy provider.
+- **Earnings never grow** — this plugin only *reads* lifetime earnings. Something else must pay players for English ([Chat2Earn](https://github.com/itsfedor/chat2earn) was built to do exactly that).
 
 ## Pair it with
 
