@@ -1,3 +1,8 @@
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.png">
+  <img alt="EnglishProgression — lifetime earnings drive English level-ups — by Fedor Molodtsov" src="assets/banner-light.png" width="100%">
+</picture>
+
 # EnglishProgression
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
