@@ -43,4 +43,4 @@ with the new multiplier. Messages are configurable with color codes.
 
 ## License
 
-MIT. Source code is in the [repository](https://github.com/itsfedor/englishprogression).
+AGPL-3.0. Source code is in the [repository](https://github.com/itsfedor/englishprogression).

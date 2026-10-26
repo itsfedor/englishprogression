@@ -3,7 +3,7 @@
   "title": "EnglishProgression",
   "summary": "Lifetime earnings drive LuckPerms level-ups: chat, earn, promote.",
   "categories": ["economy", "utility", "management"],
-  "license_id": "MIT",
+  "license_id": "AGPL-3.0",
   "client_side": "unsupported",
   "server_side": "required",
   "body_file": "scripts/modrinth/bodies/englishprogression.md"
